@@ -1,0 +1,60 @@
+{
+  "branches": [
+    "main"
+  ],
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "preset": "conventionalcommits",
+        "parserOpts": {
+          "headerPattern": "^[^a-zA-Z0-9]*(\\w*)(?:\\((.*)\\))?:\\s*(.*)$",
+          "headerCorrespondence": ["type", "scope", "subject"]
+        }
+      }
+    ],
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/github",
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogTitle": "# Changelog\n\nAll notable changes to this project will be documented in this file.\nPlease read [CONTRIBUTING.md](CONTRIBUTING.md) for commit guidelines.",
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md",
+          "package.json"
+        ],
+        "message": "💥 chore: v${nextRelease.version} [skip ci]"
+      }
+    ]
+  ],
+  "publish": false,
+  "preset": "conventionalcommits",
+  "presetConfig": {
+    "types": [
+      { "type": "feat", "section": "Features" },
+      { "type": "fix", "section": "Bug Fixes" },
+      { "type": "hotfix", "section": "Hotfixes" },
+      { "type": "perf", "section": "Performance Improvements" },
+      { "type": "build", "hidden": true },
+      { "type": "ci", "section": "CI/CD" },
+      { "type": "chore", "section": "Chore" },
+      { "type": "docs", "hidden": true },
+      { "type": "refactor", "section": "Refactors" },
+      { "type": "revert", "section": "Reverts" },
+      { "type": "style", "hidden": true },
+      { "type": "test", "hidden": true }
+    ]
+  }
+}

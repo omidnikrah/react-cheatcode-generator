@@ -1,0 +1,21 @@
+.arrow-icon {
+  margin: 0 5px;
+}
+
+.arrow-icon.right {
+  transform: rotate(90deg);
+}
+
+.arrow-icon.left {
+  transform: rotate(-90deg);
+}
+
+.arrow-icon.down {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .arrow-icon {
+    width: 20px;
+  }
+}
