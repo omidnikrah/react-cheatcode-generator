@@ -1,7 +1,5 @@
-<center>
-<h1>React CheatCode Generator</h1>
-<b>Unlock custom cheat codes in your React apps 🕹</b>
-</center>
+<h2 align="center">React CheatCode Generator</h2>
+<p align="center"><strong>Unlock custom cheat codes in your React apps 🕹</strong></p>
 
 `react-cheatcode-generator` is a simple and customizable library that allows you to implement cheat codes or key sequences in your React applications. Whether you’re creating fun easter eggs, secret shortcuts, or advanced user interactions, this library makes adding cheat codes effortless.
 
