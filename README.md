@@ -1,4 +1,5 @@
 <h2>React CheatCode Generator</h2>
+[![npm version](https://badge.fury.io/js/react-cheatcode-generator.svg)](https://badge.fury.io/js/react-cheatcode-generator)
 
 `react-cheatcode-generator` is a simple and customizable library that allows you to implement cheat codes or key sequences in your React applications. Whether you’re creating fun Easter eggs, secret shortcuts, or advanced user interactions, this library makes adding cheat codes effortless.
 
@@ -12,13 +13,32 @@
 
 ## Installation
 
-Install via npm or yarn:
+### From NPM
+
+To install the component via NPM, run the following command:
 
 ```bash
 npm install react-cheatcode-generator
 # or
 yarn add react-cheatcode-generator
 ```
+
+### From GitHub Packages
+
+To install the package from GitHub Packages, add the following to your `.npmrc` file (if not already present):
+
+```bash
+@omidnikrah:registry=https://npm.pkg.github.com
+```
+
+Then run:
+
+```bash
+npm install @omidnikrah/react-cheatcode-generator
+# or
+yarn add @omidnikrah/react-cheatcode-generator
+```
+
 
 ## Usage
 
