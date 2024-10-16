@@ -1,7 +1,7 @@
 {
   "name": "react-cheatcode-generator",
   "description": "Unlock secret powers in your React app with cheat codes!",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "main": "dist/react-cheatcode-generator.umd.js",
   "module": "dist/react-cheatcode-generator.es.js",
