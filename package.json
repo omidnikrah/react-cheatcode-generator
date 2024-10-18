@@ -22,6 +22,11 @@
     "prepare": "husky",
     "prepublishOnly": "yarn build"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omidnikrah/react-cheatcode-generator.git"
+  },
+  "homepage": "https://github.com/omidnikrah/react-cheatcode-generator.git",
   "peerDependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
